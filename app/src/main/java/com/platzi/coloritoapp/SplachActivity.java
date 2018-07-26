@@ -1,26 +1,34 @@
 package com.platzi.coloritoapp;
 
+
 import android.content.Intent;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class SplachActivity extends AppCompatActivity {
+
+    Timer time;
+    TimerTask task;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splach);
-
-        new Handler().postDelayed(new Runnable() {
+        task = new TimerTask() {
             @Override
             public void run() {
-
-                Intent intent = new Intent(SplachActivity.this,InicioActivity.class);
-                startActivity(intent);
+                Intent goBegin =new Intent(SplachActivity.this,InicioActivity.class);
+                startActivity(goBegin);
                 finish();
+
             }
-        },3000);
+        };
+        time = new Timer();
+        time.schedule(task,2000);
+
     }
 }
-// jeson apires
+
