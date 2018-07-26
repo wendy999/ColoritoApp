@@ -6,26 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.platzi.coloritoapp.SplachActivity"
     android:orientation="vertical"
-    android:background="@color/colorPrimaryDark">
-
-    <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Hello anitazone!"
-    android:textSize="30dp"
-    android:layout_marginTop="30dp"
-    android:layout_marginLeft="50dp"
-
-    />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello wendyzone!"
-        android:textSize="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="50dp"
-        />
+    >
 
 
 
