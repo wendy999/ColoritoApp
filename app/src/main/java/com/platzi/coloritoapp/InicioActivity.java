@@ -1,5 +1,6 @@
 package com.platzi.coloritoapp;
 
+import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
@@ -43,7 +44,9 @@ public class InicioActivity extends AppCompatActivity {
         @Override
         public void onClick(View v)
         {
-
+            Intent intent = new Intent(InicioActivity.this,JuegoActivity.class);
+            startActivity(intent);
+            finish();
         }
     };
 
@@ -75,6 +78,7 @@ public class InicioActivity extends AppCompatActivity {
          super.onBackPressed();
          finishAffinity(); // SE ME OLVIDA
     }
+
 
 
 }
