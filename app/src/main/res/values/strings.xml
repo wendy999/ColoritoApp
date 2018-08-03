@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ColoritoApp</string>
+    <string name="correctas">correctas:</string>
+    <string name="incorrectas">incorrectas:</string>
 </resources>
